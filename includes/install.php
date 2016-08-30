@@ -20,9 +20,6 @@ if( ! defined( 'ABSPATH' ) ) {
 function s214_settings_demo_install() {
 	global $s214_settings_demo_options;
 
-	// Setup some default options
-	$options = array();
-
 	// Pull options from WP, not our global
 	$current_options = get_option( 's214_settings_demo_options', array() );
 
@@ -48,8 +45,7 @@ function s214_settings_demo_install() {
 
 	}
 
-	$merged_options             = array_merge( $s214_settings_demo_options, $options );
-	$s214_settings_demo_options = $merged_options;
+	$s214_settings_demo_options = $options;
 
 	update_option( 's214_settings_demo_options', $merged_options );
 }
