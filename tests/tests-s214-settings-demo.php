@@ -38,7 +38,6 @@ class Tests_S214_Settings_Demo extends WP_UnitTestCase {
 	public function test_includes() {
 		$this->assertFileExists( S214_SETTINGS_DEMO_DIR . 'includes/actions.php' );
 		$this->assertFileExists( S214_SETTINGS_DEMO_DIR . 'includes/settings.php' );
-		$this->assertFileExists( S214_SETTINGS_DEMO_DIR . 'includes/install.php' );
 
 		/** Check Library Exist **/
 		$this->assertFileExists( S214_SETTINGS_DEMO_DIR . 'includes/libraries/S214-Settings/source/class.s214-settings.php' );
