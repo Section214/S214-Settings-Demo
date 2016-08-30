@@ -19,6 +19,8 @@ class Tests_Activation extends WP_UnitTestCase {
 	public function test_settings() {
 		global $s214_settings_demo_options;
 
+		s214_settings_demo_install();
+
 		$this->assertArrayHasKey( 'text', $s214_settings_demo_options );
 		$this->assertEquals( 'This is a text field', $s214_settings_demo_options['text'] );
 		$this->assertArrayHasKey( 'number', $s214_settings_demo_options );
