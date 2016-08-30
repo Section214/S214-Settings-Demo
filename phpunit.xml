@@ -11,9 +11,4 @@
 			<directory prefix="tests-" suffix=".php">./tests/</directory>
 		</testsuite>
 	</testsuites>
-	<filter>
-		<whitelist addUncoveredFilesFromWhitelist="true">
-			<file>s214-settings-demo.php</file>
-		</whitelist>
-	</filter>
 </phpunit>
