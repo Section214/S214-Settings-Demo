@@ -21,11 +21,11 @@ class Tests_Activation extends WP_UnitTestCase {
 
 		s214_settings_demo_install();
 
-		$this->assertArrayHasKey( 'text', $s214_settings_demo_options );
+		$this->assertArrayHasKey( $s214_settings_demo_options, 'text' );
 		$this->assertEquals( 'This is a text field', $s214_settings_demo_options['text'] );
-		$this->assertArrayHasKey( 'number', $s214_settings_demo_options );
+		$this->assertArrayHasKey( $s214_settings_demo_options, 'number' );
 		$this->assertEquals( 1227, $s214_settings_demo_options['number'] );
-		$this->assertArrayHasKey( 'color', $s214_settings_demo_options );
+		$this->assertArrayHasKey( $s214_settings_demo_options, 'color' );
 		$this->assertEquals( '#000000', $s214_settings_demo_options['color'] );
 	}
 }
