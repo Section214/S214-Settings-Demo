@@ -20,6 +20,8 @@ if( ! defined( 'ABSPATH' ) ) {
 function s214_settings_demo_install() {
 	global $s214_settings_demo_options;
 
+	
+
 	// Pull options from WP, not our global
 	$current_options = get_option( 's214_settings_demo_options', array() );
 

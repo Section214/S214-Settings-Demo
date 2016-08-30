@@ -102,9 +102,6 @@ if( ! class_exists( 'S214_Settings_Demo' ) ) {
 
 			require_once S214_SETTINGS_DEMO_DIR . 'includes/actions.php';
 			require_once S214_SETTINGS_DEMO_DIR . 'includes/settings.php';
-
-			// Install file is only for unit tests
-			require_once S214_SETTINGS_DEMO_DIR . 'includes/install.php';
 		}
 	}
 }
