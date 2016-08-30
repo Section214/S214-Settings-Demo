@@ -1,0 +1,25 @@
+build_settings:
+    mysql:
+        host: "localhost"
+        user: "root"
+        pass: "root"
+
+setup:
+    mysql:
+        - "DROP DATABASE IF EXISTS s214_settings_tests;"
+        - "CREATE DATABASE s214_settings_tests;"
+        - "GRANT ALL PRIVILEGES ON s214_settings_tests.* TO s214_settings_tests@'localhost' IDENTIFIED BY 's214_settings_tests';"
+
+test:
+    php_unit:
+        config:
+            - "phpunit.xml"
+        directory:
+            - "tests/"
+        run_from: "unit-tests/"
+    php_mess_detector:
+        allow_failures: true
+
+complete:
+    mysql:
+        - "DROP DATABASE IF EXISTS s214_settings_tests;"
