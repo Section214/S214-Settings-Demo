@@ -31,7 +31,7 @@ function s214_settings_demo_install() {
 		foreach( $sections as $section => $settings) {
 
 			// Check for backwards compatibility
-			$tab_sections = edd_get_settings_tab_sections( $tab );
+			$tab_sections = s214_settings_demo()->settings->get_settings_tab_sections( $tab );
 			if( ! is_array( $tab_sections ) || ! array_key_exists( $section, $tab_sections ) ) {
 				$section = 'main';
 				$settings = $sections;
