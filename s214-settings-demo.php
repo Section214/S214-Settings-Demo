@@ -39,6 +39,13 @@ if( ! class_exists( 'S214_Settings_Demo' ) ) {
 
 
 		/**
+		 * @var         object $settings The S214_Settings settings object
+		 * @since       1.0.0
+		 */
+		public $settings;
+
+
+		/**
 		 * Get active instance
 		 *
 		 * @access      public
@@ -90,8 +97,8 @@ if( ! class_exists( 'S214_Settings_Demo' ) ) {
 				require_once S214_SETTINGS_DEMO_DIR . 'includes/libraries/S214-Settings/source/class.s214-settings.php';
 			}
 
-			$settings = new S214_Settings( 's214-settings-demo', 'welcome' );
-			$s214_settings_demo_options = $settings->get_settings();
+			$this->settings = new S214_Settings( 's214-settings-demo', 'welcome' );
+			$s214_settings_demo_options = $this->settings->get_settings();
 
 			require_once S214_SETTINGS_DEMO_DIR . 'includes/actions.php';
 			require_once S214_SETTINGS_DEMO_DIR . 'includes/settings.php';

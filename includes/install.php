@@ -27,7 +27,7 @@ function s214_settings_demo_install() {
 	$current_options = get_option( 's214_settings_demo_options', array() );
 
 	// Populate some default values
-	foreach( edd_get_registered_settings() as $tab => $sections ) {
+	foreach( s214_settings_demo()->settings->get_registered_settings() as $tab => $sections ) {
 		foreach( $sections as $section => $settings) {
 
 			// Check for backwards compatibility

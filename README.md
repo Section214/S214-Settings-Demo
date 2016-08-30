@@ -1,4 +1,5 @@
 # S214 Settings Library Demo Plugin
+[![Travis](https://img.shields.io/travis/Section214/S214-Settings-Demo.svg?maxAge=2592000)](https://travis-ci.org/Section214/S214-Settings-Demo/)
 [![License](https://img.shields.io/badge/license-GPL--2.0%2B-green.svg)](https://github.com/Section214/S214-Settings/blob/master/license.txt)
 
 ## What Is This?
