@@ -139,7 +139,8 @@ function s214_settings_demo_settings( $settings ) {
 					'id'   => 'text',
 					'name' => sprintf( __( '%s Field', 's214-settings-demo' ), 'text' ),
 					'desc' => sprintf( __( 'Text fields can take \'std\', \'readonly\' and \'size\' arguements. Read more about text fields %s.', 's214-settings-demo' ), '<a href="https://github.com/Section214/S214-Settings/wiki/Settings-Reference#text-implements-a-text-field" target="_blank">' . __( 'here', 's214-settings-demo' ) . '</a>' ),
-					'type' => 'text'
+					'type' => 'text',
+					'std'  => 'This is a text field'
 				),
 				array(
 					'id'   => 'textarea',
@@ -224,13 +225,15 @@ function s214_settings_demo_settings( $settings ) {
 					'id'   => 'color',
 					'name' => sprintf( __( '%s Field', 's214-settings-demo' ), 'color' ),
 					'desc' => sprintf( __( 'Color fields can take a \'std\' arguement. Read more about color fields %s.', 's214-settings-demo' ), '<a href="https://github.com/Section214/S214-Settings/wiki/Settings-Reference#color-implements-a-color-select-field" target="_blank">' . __( 'here', 's214-settings-demo' ) . '</a>' ),
-					'type' => 'color'
+					'type' => 'color',
+					'std'  => '#000000'
 				),
 				array(
 					'id'   => 'number',
 					'name' => sprintf( __( '%s Field', 's214-settings-demo' ), 'number' ),
 					'desc' => sprintf( __( 'Number fields can take \'std\', \'max\', \'min\', \'step\', \'size\' and \'readonly\' arguements. Read more about number fields %s.', 's214-settings-demo' ), '<a href="https://github.com/Section214/S214-Settings/wiki/Settings-Reference#number-implements-a-number-field" target="_blank">' . __( 'here', 's214-settings-demo' ) . '</a>' ),
-					'type' => 'number'
+					'type' => 'number',
+					'std'  => 1227
 				),
 				array(
 					'id'   => 'upload',
